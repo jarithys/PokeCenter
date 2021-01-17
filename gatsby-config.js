@@ -28,6 +28,14 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-source-graphql",
+      options: {
+        typeName: "WPGraphql",
+        fieldName: "wpcontent",
+        url: "http://pokecenter.local/graphql",
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [`Roboto`, `Open Sans`],
