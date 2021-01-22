@@ -1,10 +1,9 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
-
 import Layout from "../components/Layout"
 import SEO from "../components/Seo"
 import {Wrapper, Image, BottomEdgeDown, Pokemon, BottomEdgeUp} from "./pageStyles/pageStyles"
-import {COLORS} from '../constants'
+import {COLORS} from "../constants"
 
 
 
@@ -12,7 +11,7 @@ const IndexPage = () => {
   const {
     wpcontent: {
       page: {
-        homeMeta:{
+        homeMeta: {
           homePageDescription,
           homePageFeaturedProducts,
           homePageHeaderImage,
@@ -40,7 +39,7 @@ const IndexPage = () => {
           }
           homePageFeaturedProducts {
             ... on WPGraphql_Pokemon {
-              id
+              slug
               pokemon {
                 pokemonName
                 pokemonDexNo
@@ -78,7 +77,7 @@ const IndexPage = () => {
             <p className="header-title">{homePageHeaderTitle}</p>
             {/* <p className="header-description">{homePageDescription}</p> */}
           </div>
-          {/* <BottomEdgeDown color={COLORS.SECONDARY} /> */}
+          <BottomEdgeDown color={COLORS.BLACK} />
         </div>
         <div className="description">
           <p>{homePageDescription}</p>
@@ -88,7 +87,7 @@ const IndexPage = () => {
           <h2>Featured Cards</h2>
           <div className="pokemon-items">
             {homePageFeaturedProducts.map(({pokemon, slug}) => (
-              <Pokemon to={`/${slug}`}>
+              <Pokemon to={`/${slug}`} key={slug}>
                 <Image fluid={pokemon.pokemonSprite.imageFile.childImageSharp.fluid} alt={pokemon.pokemonSprite.altText} />
                 <div className="pokemon-info">
                   <p>{pokemon.pokemonName}</p>

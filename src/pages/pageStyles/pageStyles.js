@@ -70,7 +70,7 @@ export const Wrapper = styled.div`
     h2 {
       font-family: ${FONT_FAMILIES.TITLE};
       font-size: 3rem;
-      color: white;
+      color: #b30000;
       text-transform: uppercase;
       text-align: center;
       margin-bottom: 3rem;
@@ -163,7 +163,7 @@ export const Wrapper = styled.div`
 export const Pokemon = styled(Link)`
   display: flex;
   position: relative;
-  width: 22vw;
+  width: 15vw;
   height: 100%;
   margin: 2vw;
   cursor: pointer;
@@ -193,7 +193,7 @@ export const Pokemon = styled(Link)`
     flex-direction: column;
     position: absolute;
     bottom: 0;
-    height: 80px;
+    height: 60px;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -203,7 +203,7 @@ export const Pokemon = styled(Link)`
 
     p {
       text-transform: uppercase;
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       font-weight: 600;
       color: white;
       margin: 0;

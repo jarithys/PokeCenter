@@ -53,7 +53,7 @@ export const MenuList = styled.ul`
     }
 
     a:hover {
-      color: ${COLORS.TERTIARY};
+      color: ${COLORS.PRIMARY};
     }
   }
 
