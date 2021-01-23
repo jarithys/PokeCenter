@@ -43,9 +43,6 @@ const IndexPage = () => {
               pokemon {
                 pokemonName
                 pokemonDexNo
-                pokemonDexEntry
-                pokemonPrimaryType
-                pokemonSecondaryType
                 pokemonSprite {
                   altText
                   sourceUrl

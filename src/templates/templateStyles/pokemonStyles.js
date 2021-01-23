@@ -20,7 +20,8 @@ export const Wrapper = styled.div`
     .pokemon-image {
       position: relative;
       width: 40vw;
-      height: 40vw;
+      height: auto;
+      margin: 2rem;
 
       @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
         height: 90vw;
@@ -28,7 +29,7 @@ export const Wrapper = styled.div`
         border-bottom: solid 15px ${COLORS.PRIMARY};
       }
 
-      .roles {
+      .generations {
         position: absolute;
         right: 0;
         bottom: 0;
@@ -38,16 +39,15 @@ export const Wrapper = styled.div`
         flex-wrap: wrap;
         color: ${COLORS.SECONDARY};
         font-family: ${FONT_FAMILIES.TITLE};
-        text-transform: uppercase;
         background-color: ${COLORS.GREY};
-        border-right: solid 15px ${COLORS.SECONDARY};
+        border-right: solid 15px ${COLORS.TERTIARY};
 
         @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
           color: ${COLORS.PRIMARY};
           border-right: solid 5px ${COLORS.PRIMARY};
         }
 
-        .role {
+        .generation {
           padding: 1rem 1.5rem;
         }
       }
@@ -65,8 +65,7 @@ export const Wrapper = styled.div`
 
       h2 {
         font-family: ${FONT_FAMILIES.TITLE};
-        text-transform: uppercase;
-        font-size: 4rem;
+        font-size: 3rem;
         border-bottom: ${COLORS.WHITE} solid 6px;
         padding-bottom: 1rem;
         margin-left: auto;
@@ -81,11 +80,11 @@ export const Wrapper = styled.div`
 
       h3 {
         font-family: ${FONT_FAMILIES.TITLE};
-        color: ${COLORS.SECONDARY};
+        color: ${COLORS.PRIMARY};
         font-size: 1.8rem;
         text-transform: uppercase;
         margin-left: auto;
-        margin-bottom: auto;
+        margin-bottom: 5rem;
 
         @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
           font-size: 1.3rem;
@@ -100,7 +99,7 @@ export const Wrapper = styled.div`
       }
 
       .description {
-        font-size: 1.2rem;
+        font-size: 1.7rem;
         color: ${COLORS.TERTIARY};
 
         @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
@@ -109,7 +108,7 @@ export const Wrapper = styled.div`
       }
 
       .info {
-        font-family: 2rem;
+        font-size: 1.7rem;
         text-transform: uppercase;
       }
     }
