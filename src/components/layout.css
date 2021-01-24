@@ -1,7 +1,7 @@
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font: Roboto, serif, sans-serif;
+  font-family: 'Questrial', sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -13,7 +13,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #898989;
-  font-family: roboto, serif;
+  font-family: 'Questrial', sans-serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;

@@ -8,9 +8,9 @@ export const COLORS = {
 }
 
 export const FONT_FAMILIES = {
-  TITLE: "Open Sans",
-  TEXT: "Roboto",
-  BUTTON: "Open Sans",
+  TITLE: "Saira",
+  TEXT: "Questrial",
+  BUTTON: "Saira",
 }
 
 export const MEDIA_QUERIES = {
