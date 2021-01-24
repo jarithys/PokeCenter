@@ -21,22 +21,22 @@ const PokemonTemplate = ({ data: { wpcontent: { pokemon: { pokemon, generations:
                     </div>
                     <div className="pokemon-info">
                         <h2>#{pokemon.pokemonDexNo} {pokemon.pokemonName}</h2>
-                        <h3>The mouse pokemon</h3> {/* CLASIFICATION */}
+                        <h3>{pokemon.pokemonClassification}</h3>
                         <p className="description">{pokemon.pokemonDexEntry}</p>
+                        <p><strong>In-game data</strong></p>
                         <p className="info">
-                        <strong>Primary in-game type:</strong> {pokemon.pokemonPrimaryType}
+                        <strong>Primary type:</strong> {pokemon.pokemonPrimaryType}
                         </p>
                         {pokemon.pokemonSecondaryType ? (
                             <p className="info">
-                            <strong>Secondary in-game type:</strong> {pokemon.pokemonSecondaryType}
+                            <strong>Secondary type:</strong> {pokemon.pokemonSecondaryType}
                             </p>
                         ) : ("")}
-                        
                         <p className="info">
-                        <strong>Height:</strong> 2m {/* HEIGHT */}
+                        <strong>Height:</strong> {pokemon.pokemonHeight} m
                         </p>
                         <p className="info">
-                        <strong>weight:</strong> 156 lbs {/* WEIGHT */}
+                        <strong>Weight:</strong> {pokemon.pokemonWeight} lbs
                         </p>
                     </div>
                 </div>
@@ -64,6 +64,9 @@ query ($id: ID!) {
           pokemonDexEntry
           pokemonPrimaryType
           pokemonSecondaryType
+          pokemonClassification
+          pokemonHeight
+          pokemonWeight
           pokemonSprite {
             altText
             sourceUrl

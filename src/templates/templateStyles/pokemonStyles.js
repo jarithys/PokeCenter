@@ -65,7 +65,7 @@ export const Wrapper = styled.div`
 
       h2 {
         font-family: ${FONT_FAMILIES.TITLE};
-        font-size: 3rem;
+        font-size: 2.3rem;
         border-bottom: ${COLORS.WHITE} solid 6px;
         padding-bottom: 1rem;
         margin-left: auto;
@@ -81,7 +81,7 @@ export const Wrapper = styled.div`
       h3 {
         font-family: ${FONT_FAMILIES.TITLE};
         color: ${COLORS.PRIMARY};
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         text-transform: uppercase;
         margin-left: auto;
         margin-bottom: 5rem;
@@ -99,7 +99,7 @@ export const Wrapper = styled.div`
       }
 
       .description {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         color: ${COLORS.TERTIARY};
 
         @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
@@ -108,7 +108,13 @@ export const Wrapper = styled.div`
       }
 
       .info {
+        font-size: 1.5rem;
+      }
+
+      p:nth-child(4) {
         font-size: 1.7rem;
+        border-bottom: ${COLORS.SECONDARY} solid 4px;
+        color: ${COLORS.PRIMARY};
         text-transform: uppercase;
       }
     }

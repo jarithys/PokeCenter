@@ -4,7 +4,7 @@ export const COLORS = {
   TERTIARY: "#6666ff",
   WHITE: "#FFF",
   BLACK: "#181819",
-  GREY: "#242124",
+  GREY: "#282528",
 }
 
 export const FONT_FAMILIES = {

@@ -170,9 +170,9 @@ export const Pokemon = styled(Link)`
   transition: transform 0.3s ease-in-out;
 
   @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
-    width: 90vw;
-    height: 90vw;
-    margin: 2vw 0;
+    width: 40%;
+    height: 100%;
+    margin: 2vw;
   }
 
   &:hover {
