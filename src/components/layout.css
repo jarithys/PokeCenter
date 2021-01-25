@@ -9,6 +9,8 @@ html {
   color: #898989;
 }
 body {
+  position: relative;
+  overflow-x: hidden;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

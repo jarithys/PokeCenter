@@ -24,9 +24,8 @@ export const Wrapper = styled.div`
       margin: 2rem;
 
       @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
-        height: 90vw;
-        width: 90vw;
-        border-bottom: solid 15px ${COLORS.PRIMARY};
+        height: auto;
+        width: auto;
       }
 
       .generations {
@@ -40,11 +39,12 @@ export const Wrapper = styled.div`
         color: ${COLORS.SECONDARY};
         font-family: ${FONT_FAMILIES.TITLE};
         background-color: ${COLORS.GREY};
-        border-right: solid 15px ${COLORS.TERTIARY};
+        border-right: solid 10px ${COLORS.PRIMARY};
 
         @media (max-width: ${MEDIA_QUERIES.MEDIUM}) {
-          color: ${COLORS.PRIMARY};
-          border-right: solid 5px ${COLORS.PRIMARY};
+          color: ${COLORS.SECONDARY};
+          border-right: none;
+          border-bottom: solid 5px ${COLORS.PRIMARY};
         }
 
         .generation {
