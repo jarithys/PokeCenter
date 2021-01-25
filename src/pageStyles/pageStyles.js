@@ -211,7 +211,6 @@ export const Pokemon = styled(Link)`
 
     p:nth-child(2) {
       color: ${COLORS.SECONDARY};
-
       margin-top: 0.3rem;
     }
   }
@@ -245,7 +244,6 @@ export const BottomEdgeUp = styled.div`
     display: block;
     border-bottom: ${({ color }) => `100px solid ${color}`};
     border-left: 100vw solid transparent;
-
     transform: translateY(140px) scale(1.05);
   }
 `

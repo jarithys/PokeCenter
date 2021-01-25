@@ -61,7 +61,6 @@ const PokemonsPage = () => {
     }
   `)
 
-  // console.log(data)
 
   return (
     <Layout>

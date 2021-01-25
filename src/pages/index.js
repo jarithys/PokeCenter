@@ -62,7 +62,6 @@ const IndexPage = () => {
     }
   }
   `);
-  // console.log(data)
 
   return (
     <Layout>
@@ -72,7 +71,6 @@ const IndexPage = () => {
           <Image fluid={homePageHeaderImage.imageFile.childImageSharp.fluid} alt={homePageHeaderImage.altText} />
           <div className="inner-div">
             <p className="header-title">{homePageHeaderTitle}</p>
-            {/* <p className="header-description">{homePageDescription}</p> */}
           </div>
           <BottomEdgeDown color={COLORS.BLACK} />
         </div>
